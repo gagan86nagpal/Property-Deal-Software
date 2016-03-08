@@ -1,0 +1,29 @@
+Configuring Mysql:
+Well , You need mysql server (mine is 5.7) and also to see what goes behind the curtains you need to have MySQL Workbench(mine is 5.2 CE ).
+Obviously JDK installed with environment variables set.
+mysql-connector-java-5.1.38 is also required (but if you are ruuning as exectuable jar file , then this library is automatically included in it).
+If you want to run as source code in your own IDE then ADD above connector jar file in your working project in IDE.
+Installation of above mentioned softwares is easy , simple and could be done by youtube videos.
+After that,
+You need to set ,
+Username for mysql as : root
+Password for same as: root
+(in case you have different username and password , you could change the souce code , you just have to change the instance variables in LoadJdbcDriver class
+There you would find two fields as username and password , just change them).
+After that, you workimg database should be "gagan"(Without quotes)(in case your database is different either create this or change the source code and that could be done by line :23.
+There in the db_url just change the "gagan" to "your_database_name")
+There You should create a table named as "propertydeal"
+and columns should be:
+person_name as varchar(20)
+address as varchar(50)
+id as int
+deal_date as date
+rent as int
+area as varchar(20)
+phone_number as long
+image_path as varchar(150)
+Please note : Order in which these columns should be made are fixed as source code is using these orders.
+After That You Are Good To Go.
+To use the software Read "Read me.txt".
+
+
